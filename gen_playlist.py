@@ -17,7 +17,7 @@ def generate_json():
         title = filename.replace('.mp3', '').replace('_', ' ').capitalize()
         
         # On crée l'URL "Raw" pour GitHub
-        url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{REPO_NAME}/{BRANCH}/{filename}"
+        url = f"https://github.com/{GITHUB_USER}/{REPO_NAME}/raw/refs/heads/{BRANCH}/{filename}"
         
         playlist.append({
             "title": title,
